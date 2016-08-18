@@ -1,0 +1,218 @@
+<%@ page language="Java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#im').hover(function(){
+       $('#lg').hide("fast");
+    },
+    function(){
+       $('#lg').show("fast");
+    });
+    $('.a').hover(function(){
+       $('.a').fadeTo("fast", 0.3);
+       $('#sp').show("fast");
+       $('#lg').hide("fast");
+    },
+    function(){
+       $('.a').fadeTo("fast", 1);
+       $('#sp').hide("fast");
+
+    });
+    $('.b').hover(function(){
+       $('.b').fadeTo("fast", 0.3);
+       $('#su').show("fast");
+       $('#lg').hide("fast");
+    },
+    function(){
+       $('.b').fadeTo("fast", 1);
+       $('#su').hide("fast");
+
+    });
+    $('.c').hover(function(){
+       $('.c').fadeTo("fast", 0.3);
+       $('#fa').show("fast");
+       $('#lg').hide("fast");
+    },
+    function(){
+       $('.c').fadeTo("fast", 1);
+       $('#fa').hide("fast");
+
+    });
+    $('.d').hover(function(){
+       $('.d').fadeTo("fast", 0.3);
+       $('#wi').show("fast");
+       $('#lg').hide("fast");
+    },
+    function(){
+       $('.d').fadeTo("fast", 1);
+       $('#wi').hide("fast");
+    });
+ });
+</script>
+<style>
+ * {
+  margin:0; padding:0; 
+}
+
+header{
+  width:100%; height: 100px;
+}
+.header_warp{width:1650px;height:100%; margin : 0 auto;
+  background-color: greenyellow;}
+.logo {background :#fff; width: 200px;  height: 70px;float: left;border:5px solid black; margin-left: 15px;
+  }
+nav{  height: 50px; float:right; margin-right: 10px;}
+ul{width: 100%;height: 100%; font-size: 30px;}
+li{list-style:none;float:left; width: 100px;height: 50px;text-align: center; line-height:40px;  }
+li:after{content:"|"; margin: 10px; color:#000;}
+li:last-child:after{content: none;}
+li:hover{
+  color:green;
+}
+.a{
+  border: 3px solid black;
+  height: 600px;
+  width: 335px;
+  float: left;
+  margin-left: 15px;
+  background-color: white;
+  margin-top: 20px;
+ 
+  
+}
+  
+.b{
+  border: 3px solid black;
+  height: 600px;
+  width: 335px;
+  float: left;
+  margin-left: 15px;
+
+  margin-top: 20px;
+ 
+  
+}
+.c{
+  border: 3px solid black;
+  height: 600px;
+  width: 335px;
+  float: left;
+  margin-left: 15px;
+
+  margin-top: 20px;
+ 
+  
+}
+.d{
+  border: 3px solid black;
+  height: 600px;
+  width: 335px;
+  float: left;
+  margin-left: 15px;
+
+  margin-top: 20px;
+ 
+  
+}
+section{
+  width: 1440px;
+  height:670px; 
+ border:2px solid black;
+  margin: 0 auto;
+  margin-top: 10px;
+
+}
+  #infor{
+      float:right;
+    margin-right: 500px;
+      font-size: 30px;
+      font-family:fantasy;
+  }
+footer{
+  width:1450px;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 25px;
+  
+}
+#sp{
+ margin: 15px 50px;
+ text-align: center;
+ position: absolute;   
+ display: none;
+}
+#su{
+ margin: 15px 40px;
+ text-align: center;
+ position: absolute;   
+ display: none;
+}
+#fa{
+ margin: 15px 70px;
+ text-align: center;
+ position: absolute;   
+ display: none;
+}
+#wi{
+ margin: 15px 50px;
+ text-align: center;
+ position: absolute;   
+ display: none;
+}
+#lg{
+ margin: 15px 70px;
+ text-align: center;
+ position: absolute;   
+
+}
+
+#wrap{
+  width: 1650px;
+  height: 900px;
+  border:3px solid black;
+  margin: 0 auto;
+  background-color: #C8EE9D;
+ 
+}
+</style>
+<meta charset="UTF-8">
+<title>관광사이트</title>
+</head>
+<body>
+<header id="header">
+<div class="header_warp">
+                        
+<div class="logo"><h1 id="sp">Spring</h1><h1 id="su">Summer</h1><h1 id="fa">Fall</h1><h1 id="wi">Winter</h1><h1 id="lg"><!--<img src="logo1.png" width="200px" height="70px" >-->logo</h1></div>
+<nav>
+<ul>
+<li>Home</li>
+<li>Works</li>
+<li>About</li>
+<li>Login</li>
+
+</ul>
+</nav>
+</div>
+</header>
+      
+<div id="wrap">
+
+<section id="im">
+<div class="bc"><img class="a" src="C:\Users\win\Desktop\동아리 과제\봄.jpg"></div>
+<div class="bc"><img class="b" src="C:\Users\win\Desktop\동아리 과제\여름.jpg"></div>
+<div class="bc"><img class="c" src="C:\Users\win\Desktop\동아리 과제\가을.jpg"></div>
+<div class="bc"><img class="d" src="C:\Users\win\Desktop\동아리 과제\겨울.jpg"></div>
+<span id="infor"><p> 클릭하면 각 사이트로 이동합니다.</p></span>
+</section>
+            
+<footer></footer>
+</div>
+	
+</body>
+</html>
